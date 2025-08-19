@@ -3,7 +3,7 @@ this is not finished at all.
 
 # TODO
 
-- [ ] pick a better sound voice
+- [ ] pick a better sounding voice
 - [ ] make the music notes
 - [ ] make the ascii images
 - [ ] make the frame
