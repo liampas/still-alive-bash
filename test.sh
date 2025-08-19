@@ -1,9 +1,12 @@
-clear
-cat borders.txt
+#!/bin/bash
+n=$'5'
+text=$(sed -n "${n}p" text.txt)
+length=$(sed -n "${n}p" text.txt | awk '{print length}')
 
+rest=$((47-$length))
+#printf ' %.0s' ${test..rest}
 
+space=$(seq -s" " $rest|tr -d '[:digit:]')
 
-
-espeak -ven+f3 -m -p 80 -s 180 -f "lyrics.txt" >/dev/null 2>&1 
-
-
+echo "| $text$space|"
+echo "$n"
