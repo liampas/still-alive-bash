@@ -1,41 +1,116 @@
 #!/bin/bash
-
+killall mplayer
 clear
-
-#mplayer -really-quiet Still_Alive_Song.mp3 >/dev/null 2>&1 &
-
-#echo -------------------------------------------------
-
-#cat borders.txt
+cat borders.txt
+mplayer -really-quiet Still_Alive_Song.mp3 >/dev/null 2>&1 &
 
 
-text=$(sed -n "6p" text.txt)
-length=$(sed -n "6p" text.txt | awk '{print length}')
+line='1'
 
+#line is used for when writing the old text
 
-for (( i=1; i<=$length; i++ ))
+for line in {1..2}
 do
-
-rest=$((47-$i))
-space=$(seq -s" " $rest|tr -d '[:digit:]')
-
-	echo -------------------------------------------------
-
-	echo -n "| "
-	echo -n "${text:0:i}"
 	
-	echo "$space|"
+  text=$(sed -n "${line}p" text.txt)
+  length=$(sed -n "${line}p" text.txt | awk '{print length}')
+  old_text=$(head --lines -${line} text.txt)
 
+  for (( character=1; character<=$length; character++ ))
+  do
 
-	for (( o=1; o<5; o++ ))
-	do 
-		echo "|                                               |"
+    #calculates the number of spaces to add
+    rest=$((48-$character))
+    space=$(seq -s" " $rest|tr -d '[:digit:]')
+    lin=$(($line-1))
+
+	clear
+	
+    echo " -------------------------------------------------"
+    #writes the old text
+    echo | head --lines ${lin} text+borders.txt
+
+    echo -n "| "
+    echo -n "${text:0:character}"
+	
+    echo "$space|"
+
+    #prints the rest of the border
+	#remaining line to draw
+	need=$((31-$line))
+	for (( o=1; o<$need; o++ ))
+	do
+
+		echo "|                                                |"
 	done
 
-
-
-	sleep 0.1
-	clear
+	echo " -------------------------------------------------"
+	sleep 0.06
+  done
 done
 
 
+
+
+
+
+
+
+
+
+sleep 4.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for line in {3..24}
+do
+	
+  text=$(sed -n "${line}p" text.txt)
+  length=$(sed -n "${line}p" text.txt | awk '{print length}')
+  old_text=$(head --lines -${line} text.txt)
+
+  for (( character=1; character<=$length; character++ ))
+  do
+
+    #calculates the number of spaces to add
+    rest=$((48-$character))
+    space=$(seq -s" " $rest|tr -d '[:digit:]')
+    lin=$(($line-1))
+
+	clear
+	
+    echo " -------------------------------------------------"
+    #writes the old text
+    echo | head --lines ${lin} text+borders.txt
+
+    echo -n "| "
+    echo -n "${text:0:character}"
+	
+    echo "$space|"
+
+    #prints the rest of the border
+	#remaining line to draw
+	need=$((31-$line))
+	for (( o=1; o<$need; o++ ))
+	do
+
+		echo "|                                                |"
+	done
+
+	echo " -------------------------------------------------"
+	sleep 0.06
+  done
+done
