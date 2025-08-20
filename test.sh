@@ -1,12 +1,28 @@
 #!/bin/bash
-n=$'5'
-text=$(sed -n "${n}p" text.txt)
-length=$(sed -n "${n}p" text.txt | awk '{print length}')
 
-rest=$((47-$length))
-#printf ' %.0s' ${test..rest}
+clear
 
-space=$(seq -s" " $rest|tr -d '[:digit:]')
+#mplayer -really-quiet Still_Alive_Song.mp3 >/dev/null 2>&1 &
 
-echo "| $text$space|"
-echo "$n"
+#echo -------------------------------------------------
+
+#cat borders.txt
+
+
+word=$(sed -n "6p" text.txt)
+n=$(sed -n "6p" text.txt | awk '{print length}')
+
+
+
+for (( i=1; i<=$n; i++ ))
+do 
+	echo -------------------------------------------------
+
+	echo -n "| "
+	echo ${word:0:i}
+
+	sleep 0.1
+	clear
+done
+
+
