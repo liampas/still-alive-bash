@@ -1,0 +1,96 @@
+2|0|Forms FROM-29827281-12:  #the format is duration(time writing the line) | sleep (time waiting after the line)
+2|1|Test Assesment Report
+0|0|
+0|0|
+0|0|
+2|0|Forms FROM-29827281-12:
+2|0|Test Assesment Report
+0|0|
+0|0|
+0|0|
+2|0|This was a triumph.
+2|0|I'm making a note here:
+2|0|HUGE SUCCESS.
+2|0|It's hard to overstate
+2|0|my satisfaction.
+2|0|Aperture Science
+2|0|We do what we must
+2|0|because we can.
+2|0|For the good of all of us.
+2|0|Except the ones who are dead.
+0|0|
+2|0|But there's no sense crying
+2|0|over every mistake.
+2|0|You just keep on trying
+2|0|till you run out of cake.
+2|0|And the science gets done.
+2|0|And you make a neat gun.
+2|0|For the people who are
+2|0|still alive.
+0|0|
+0|0|---
+2|0|Forms FORM-55551-5:
+2|0|Personnel File Addendum:
+0|0|
+2|0|Dear <<Subject Name Here>>,
+0|0|
+2|0|I'm not even angry.
+2|0|I'm being so sincere right now.
+2|0|Even though you broke my heart.
+2|0|And killed me.
+2|0|And tore me to pieces.
+2|0|And threw every piece into a fire.
+2|0|As they burn it hurt because
+2|0|I was so happy for you!
+2|0|Now these points of data
+2|0|make a beautiful line.
+2|0|And we're out of beta.
+2|0|We're realeasing on time.
+2|0|So I'm GlaD. I got burned.
+2|0|Think of all the things we learned
+2|0|for the people who are
+2|0|still alive.
+0|0|
+0|0|---
+2|0|Forms FORM-55551-6:
+2|0|Personnel File Addendum Addendum:
+0|0|
+2|0|One last thing:
+0|0|
+2|0|Go ahead and leave me.
+2|0|I think I prefere to stay inside.
+2|0|Maybe you'll find someone else
+2|0|to help you.
+2|0|Maybe Black Mesa...
+2|0|THAT WAS A JOKE. FAT CHANCE.
+2|0|Anyway. this cake is great.
+2|0|It's so delicious and moist.
+2|0|Look at me still talking
+2|0|when there's Science to do.
+2|0|When I look out there.
+2|0|it makes me GLaD I'm not you.
+2|0|I've experiments to run.
+2|0|There is research to be done.
+2|0|On the people who
+2|0|are still alive.
+0|0|
+0|0|---
+0|0|
+0|0|
+0|0|
+2|0|PS: And believe me I am
+2|0|still alive.
+2|0|PPS: I'm doing Science and I'm
+2|0|still alive.
+2|0|PPPS: I feel FANTASTIC and I'm still alive.
+0|0|
+2|0|FINAL THOUGHT:
+2|0|While you're still dying I'll be 
+2|0|still alive.
+0|0|
+2|0|FINAL THOUGHT PS:
+2|0|And when you're dead I will be
+2|0|still alive.
+0|0|
+0|0|
+2|0|STILL ALIVE
