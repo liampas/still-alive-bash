@@ -9,17 +9,30 @@ clear
 #cat borders.txt
 
 
-word=$(sed -n "6p" text.txt)
-n=$(sed -n "6p" text.txt | awk '{print length}')
+text=$(sed -n "6p" text.txt)
+length=$(sed -n "6p" text.txt | awk '{print length}')
 
 
+for (( i=1; i<=$length; i++ ))
+do
 
-for (( i=1; i<=$n; i++ ))
-do 
+rest=$((47-$i))
+space=$(seq -s" " $rest|tr -d '[:digit:]')
+
 	echo -------------------------------------------------
 
 	echo -n "| "
-	echo ${word:0:i}
+	echo -n "${text:0:i}"
+	
+	echo "$space|"
+
+
+	for (( o=1; o<5; o++ ))
+	do 
+		echo "|                                               |"
+	done
+
+
 
 	sleep 0.1
 	clear
