@@ -2,8 +2,7 @@
 killall mplayer
 clear
 cat borders.txt
-mplayer -really-quiet Still_Alive_Song.mp3 >/dev/null 2>&1 &
-
+mplayer -srate 48000 Still_Alive_Song.mp3 >/dev/null 2>&1 &
 
 line='1'
 
@@ -25,8 +24,13 @@ do
     lin=$(($line-1))
 
     duration=$(awk -F"|" -v line=$line 'NR==line {print $1}' speed-sleep.txt)
+    
     sleeps=$(awk -F"|" -v line=$line 'NR==line {print $2}' speed-sleep.txt)
-    speed=$(awk "BEGIN {printf \"%.3f\", $duration/$length}")
+    if [[ -z $sleeps ]] then
+	    sleeps='0'
+    fi
+
+    speed=$(awk "BEGIN {printf \"%.9f\", $duration/$length}")
     clear
     echo " -------------------------------------------------"
     #writes the old text
@@ -38,17 +42,21 @@ do
     echo "$space|"
 
     #prints the rest of the border
-	#remaining line to draw
-	need=$((31-$line))
-	for (( o=1; o<$need; o++ ))
-	do
+    #remaining line to draw
+    need=$((31-$line))
+    for (( o=1; o<$need; o++ ))
+    do
 
-		echo "|                                                |"
-	done
+	    echo "|                                                |"
+    done
 
-	echo " -------------------------------------------------"
-	sleep $speed
-  done
-  sleep $sleeps
+echo " -------------------------------------------------"
+    sleep $speed
+done
+
+if [[ $sleeps ]] then
+sleep $sleeps
+
+fi
 done
 
