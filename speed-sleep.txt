@@ -1,25 +1,20 @@
 2|0|Forms FROM-29827281-12:  #the format is duration(time writing the line) | sleep (time waiting after the line)
-2|1|Test Assesment Report
-0|0|
-0|0|
-0|0|
-2|0|Forms FROM-29827281-12:
 2|0|Test Assesment Report
+2|0|
 0|0|
 0|0|
-0|0|
-2|0|This was a triumph.
+2|2|This was a triumph.
 2|0|I'm making a note here:
-2|0|HUGE SUCCESS.
-2|0|It's hard to overstate
-2|0|my satisfaction.
-2|0|Aperture Science
+2|1|HUGE SUCCESS.
+2.14|0|It's hard to overstate
+2.11|2|my satisfaction.
+2|2|Aperture Science
 2|0|We do what we must
-2|0|because we can.
-2|0|For the good of all of us.
-2|0|Except the ones who are dead.
+1.13|1.12|because we can.
+3|0|For the good of all of us.
+2.05|0.12|Except the ones who are dead.
 0|0|
-2|0|But there's no sense crying
+2.08|0|But there's no sense crying
 2|0|over every mistake.
 2|0|You just keep on trying
 2|0|till you run out of cake.

@@ -7,7 +7,7 @@ clear
 #echo -------------------------------------------------
 
 cat borders.txt
-for line in {1..25}
+for line in {76..91}
 
 do 
 text=$(sed -n "${line}p" text.txt)
